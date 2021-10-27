@@ -19,5 +19,5 @@ function collection(imgs) {
   };
 
   
-  this.next("frames/frame0.jpg"); // to initialize with some image
+  this.next("frames/frame100.jpg"); // to initialize with some image
 }
