@@ -1,8 +1,8 @@
 window.onload = choose_random;
 
 var mypics = new Array()
-for (i = 0; i < 18980;i+=10){
-    mypics[i] = "frames/frame"+String(i)+".jpg"
+for (i = 0; i < 1898;i+=1){
+    mypics[i] = "frames/frame"+String(i*10)+".jpg"
 }
 
 function choose_random() {
