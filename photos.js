@@ -15,8 +15,7 @@ function collection(imgs) {
     // if (this.i >= imgs.length) {
     //   this.i = 0;
     // }
-    this.i = imgs[Math.floor(Math.random() * imgs.length)]
-    img.src = imgs[this.i];
+    img.src = this.imgs[Math.floor(Math.random() * this.imgs.length)]
   };
 
   
