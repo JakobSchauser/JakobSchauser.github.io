@@ -1,23 +1,11 @@
+window.onload = choose_random;
+
+var mypics = new Array()
 for (i = 0; i < 26670;i+=10){
-    nms[i] = "frames/frame"+String(i)+"jpg"
+    mypics[i] = "frames/frame"+String(i)+".jpg"
 }
 
-var arr = new collection(nms);
-
-function collection(imgs) {
-  this.imgs = imgs;
-  this.i = 0;
-
-  this.next = function(element) {
-    var img = document.getElementById(element);
-    
-    // this.i++;
-    // if (this.i >= imgs.length) {
-    //   this.i = 0;
-    // }
-    img.src = this.imgs[Math.floor(Math.random() * this.imgs.length)]
-  };
-
-  
-  this.next("frames/frame100.jpg"); // to initialize with some image
+function choose_random() {
+  var randomNum = Math.floor(Math.random() * mypics.length);
+  document.getElementById("mainImg").src = mypics[randomNum];
 }
