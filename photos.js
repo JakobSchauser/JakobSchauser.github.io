@@ -11,11 +11,11 @@ function collection(imgs) {
   this.next = function(element) {
     var img = document.getElementById(element);
     
-    this.i++;
-    if (this.i >= imgs.length) {
-      this.i = 0;
-    }
-
+    // this.i++;
+    // if (this.i >= imgs.length) {
+    //   this.i = 0;
+    // }
+    this.i = imgs[Math.floor(Math.random() * imgs.length)]
     img.src = imgs[this.i];
   };
 
