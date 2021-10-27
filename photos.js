@@ -7,7 +7,9 @@ function choose_random() {
 
   var mypics = new Array();
   for (i = 0; i < 1000;i+=1){
-      mypics[i] = "/frames/frame"+String(i)+".jpg";
+      // mypics[i] = "/frames/frame"+String(i)+".jpg";
+      mypics[i] = "https://raw.githubusercontent.com/JakobSchauser/JakobSchauser.github.io/master/frames/frame"+String(i)+".jpg";
+
   }
 
   var randomNum = Math.floor(Math.random() * mypics.length);
