@@ -1,7 +1,7 @@
 window.onload = choose_random;
 
 var mypics = new Array()
-for (i = 0; i < 26670;i+=10){
+for (i = 0; i < 18980;i+=10){
     mypics[i] = "frames/frame"+String(i)+".jpg"
 }
 
