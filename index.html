@@ -3,7 +3,7 @@
 
 <head>
   <title>photos</title>
-  <script src="photos.js"></script>
+  <!-- <script src="photos.js"></script> -->
   <style>
 html,body{
     margin:0;
@@ -11,14 +11,9 @@ html,body{
     overflow:hidden;
 }
 img{
-    min-height:100%;
-    min-width:100%;
-    height:auto;
-    width:auto;
-    position:absolute;
-    top:-100%; bottom:-100%;
-    left:-100%; right:-100%;
-    margin:auto;
+  display:block;
+  height:100%;
+  object-fit: cover;
 }
 
   </style>
@@ -26,7 +21,8 @@ img{
 
 <body>
 
-    <img id='mainImg' src="frames/frame100.jpg">
+ <center><img id='mainImg' src="fysikevy.jpg"></center>
+
 </body>
 
 </html>
