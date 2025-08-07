@@ -59,6 +59,17 @@ class ComponentLoader {
         const facts = [
             "There are more hydrogen atoms in a single water molecule than stars in the entire solar system!",
             "In a vacuum, the speed of sound is constant!",
+            "Sputnik 1 (the first manmade satellite) was launched closer to the Great Pyramid of Giza than to the Eiffel Tower!",
+            "If you are standing in the right position, Jupiter and the sun appears to be the same size in the sky!",
+            "The calorie density of Uranium-235 means you only need to consume 1 gram to sustain you for the rest of your life!",
+            "Because the recent population growth in urban areas, the position of the moon has been invariably changed!",
+            "Recently, evolution has led to the creation of organisms whose brains run on electricity!",
+            "Because of the methods used to represent Earth's surface, Greenland appears smaller on a map than it is in real life!",
+            // "Mean people have less arms than the median nice person!",
+            // "If you are looking at the sun close enough.",
+            // "Due to the curvature of the Earth, you can see the curvature of the Earth!",
+            // "Due to light bending, "
+
         ];
 
         const sections = document.querySelectorAll('.section');
