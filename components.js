@@ -58,16 +58,16 @@ class ComponentLoader {
         
         const facts = [
             "There are more hydrogen atoms in a single water molecule than stars in the entire solar system!",
-            "In a vacuum, the speed of sound is constant!",
+            "The speed of sound is constant in a vacuum!",
             "Sputnik 1 (the first manmade satellite) was launched closer to the Great Pyramid of Giza than to the Eiffel Tower!",
+            "Due to the way sunlight reflects off the ground, you can see the curvature of the Earth with the naked eye!",
+            "Because the recent population growth in urban areas, the position of the moon has been invariably changed!",
+            "Recently, evolution has led to the creation of organisms whose brains interact with electricity!",
+            "Because of the methods used to represent Earth's surface, Greenland appears smaller on a map than it is in real life!",
             "If you are standing in the right position, Jupiter and the sun appears to be the same size in the sky!",
             "The calorie density of Uranium-235 means you only need to consume 1 gram to sustain you for the rest of your life!",
-            "Because the recent population growth in urban areas, the position of the moon has been invariably changed!",
-            "Recently, evolution has led to the creation of organisms whose brains run on electricity!",
-            "Because of the methods used to represent Earth's surface, Greenland appears smaller on a map than it is in real life!",
             "The average number of arms in Russia is less than twice the population per capita in the United States!",
             // "If you are looking at the sun close enough.",
-            "Due to sunlight reflecting off the ground, you can see the curvature of the Earth with the naked eye!"
 
         ];
 
