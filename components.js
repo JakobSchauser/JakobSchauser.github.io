@@ -28,9 +28,6 @@ class ComponentLoader {
         
         // Add did you know boxes
         this.addDidYouKnowBoxes();
-        
-        // Format URLs for better wrapping
-        this.formatURLs();
     }
 
     static setActiveNavigation() {
@@ -80,21 +77,6 @@ class ComponentLoader {
             });
             
             section.appendChild(didYouKnowBox);
-        });
-    }
-
-    static formatURLs() {
-        const urlElements = document.querySelectorAll('.link-url');
-        urlElements.forEach(urlElement => {
-            const originalURL = urlElement.textContent;
-            // Split URL at slashes and dots to create natural break points
-            const formattedURL = originalURL
-                .replace(/\//g, '/\n')  // Add line break after each slash
-                .replace(/\./g, '.\n')  // Add line break after each dot
-                .replace(/\n\n/g, '\n') // Remove double line breaks
-                .replace(/\n$/, '');    // Remove trailing line break
-            
-            urlElement.textContent = formattedURL;
         });
     }
 }
