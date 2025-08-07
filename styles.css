@@ -117,7 +117,7 @@ main {
 /* Did You Know boxes - Interactive facts! */
 .did-you-know-box {
     position: absolute;
-    bottom: -60px;
+    bottom: -100px;
     left: 50%;
     transform: translateX(-50%);
     background: #ffff00;
@@ -562,28 +562,41 @@ footer::before {
     background: linear-gradient(45deg, #00ff00, #ff00ff);
 }
 
-/* Responsive design - MOBILE UNFRIENDLY LIKE THE 90'S! */
+/* Responsive design - MOBILE FRIENDLY IMPROVEMENTS! */
+@media (max-width: 1024px) {
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
         height: auto;
-        padding: 1rem 20px;
+        padding: 0.8rem 15px;
+    }
+
+    .nav-logo {
+        font-size: 1.6rem;
     }
 
     .nav-menu {
-        gap: 0.5rem;
-        margin-top: 1rem;
+        gap: 0.3rem;
+        margin-top: 0.8rem;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .nav-link {
-        font-size: 1rem;
-        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+        border: 2px solid #ffff00;
+        text-shadow: 1px 1px 0px #000000;
     }
 
     main {
-        margin-top: 150px;
+        margin-top: 140px;
     }
 
     .section h2 {
@@ -600,33 +613,69 @@ footer::before {
         gap: 1.5rem;
     }
     
-    .section::before {
+    .did-you-know-box {
         font-size: 0.9rem;
-        padding: 5px 10px;
+        padding: 6px 15px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-logo {
+        font-size: 1.4rem;
+    }
+
+    .nav-menu {
+        gap: 0.2rem;
+        margin-top: 0.6rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
+        border: 2px solid #ffff00;
+    }
+
+    main {
+        margin-top: 130px;
     }
 }
 
 @media (max-width: 480px) {
+    .nav-container {
+        padding: 0.6rem 10px;
+    }
+
+    .nav-logo {
+        font-size: 1.2rem;
+    }
+
     .nav-menu {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
+        flex-direction: row;
+        gap: 0.15rem;
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.5rem;
+        border: 1px solid #ffff00;
+        text-shadow: 1px 1px 0px #000000;
     }
 
     main {
-        margin-top: 220px;
+        margin-top: 120px;
     }
 
     .section h2 {
         font-size: 1.8rem;
     }
     
-    .nav-logo {
-        font-size: 1.5rem;
-    }
-    
-    .section::before {
+    .did-you-know-box {
         font-size: 0.8rem;
-        padding: 3px 8px;
+        padding: 5px 12px;
+        max-width: 250px;
+        bottom: -50px;
     }
 }

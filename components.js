@@ -50,6 +50,12 @@ class ComponentLoader {
     }
 
     static addDidYouKnowBoxes() {
+        // Only add "Did you know?" boxes on the home page
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        if (currentPage !== 'index.html' && currentPage !== '') {
+            return;
+        }
+        
         const facts = [
             "There are more hydrogen atoms in a single water molecule than stars in the entire solar system!",
             "In a vacuum, the speed of sound is constant!",
