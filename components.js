@@ -65,10 +65,9 @@ class ComponentLoader {
             "Because the recent population growth in urban areas, the position of the moon has been invariably changed!",
             "Recently, evolution has led to the creation of organisms whose brains run on electricity!",
             "Because of the methods used to represent Earth's surface, Greenland appears smaller on a map than it is in real life!",
-            // "Mean people have less arms than the median nice person!",
+            "The average number of arms in Russia is less than twice the population per capita in the United States!",
             // "If you are looking at the sun close enough.",
-            // "Due to the curvature of the Earth, you can see the curvature of the Earth!",
-            // "Due to light bending, "
+            "Due to sunlight reflecting off the ground, you can see the curvature of the Earth with the naked eye!"
 
         ];
 
