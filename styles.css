@@ -1,6 +1,206 @@
-/* 90's Retro Website Styles - WELCOME TO THE WORLD WIDE WEB! */
-* {
-    margin: 0;
+/* 90's Retro Website Styles - WELCOME TO THE WORLD WIDE WEB! */* Standalone blink class for any element */
+.blink {
+    animation: blink 1.5s infinite;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+/* Typing animation class */
+.typing {
+    overflow: hidden;
+    border-right: 3px solid #ff0000;
+    white-space: nowrap;
+    animation: typewriter 4s steps(50) 1s 1 normal both, blink-cursor 1s steps(1) infinite;
+    font-weight: bold;
+    color: #000080;
+    text-shadow: 1px 1px 0px #ffffff;
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-cursor {
+    0%, 50% { border-color: #ff0000; }
+    51%, 100% { border-color: transparent; }
+}
+
+/* Retro box styling */
+.retro-box {
+    background: linear-gradient(135deg, #ffff00, #ff8000);
+    border: 4px solid #000000;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    box-shadow: 8px 8px 0px #ff0000;
+    position: relative;
+    transform: rotate(-1deg);
+    transition: all 0.3s ease;
+}
+
+.retro-box::before {
+    content: "★ SPECIAL ANNOUNCEMENT ★";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff0000;
+    color: #ffffff;
+    padding: 5px 15px;
+    border: 2px solid #000000;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.retro-box:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 12px 12px 0px #ff00ff;
+    background: linear-gradient(135deg, #00ff00, #00ffff);
+}
+
+.retro-box p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 1px 1px 0px #ffffff;
+    text-align: center;
+}
+
+/* Retro box 2 - For Publications */
+.retro-box2 {
+    background: linear-gradient(135deg, #00ffff, #ff00ff);
+    border: 4px solid #000000;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 700px;
+    box-shadow: 8px 8px 0px #00ff00;
+    position: relative;
+    transform: rotate(0.5deg);
+    transition: all 0.3s ease;
+}
+
+.retro-box2::before {
+    content: "📄 PUBLICATION 📄";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0000ff;
+    color: #ffffff;
+    padding: 5px 15px;
+    border: 2px solid #ffff00;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 0px #000000;
+    animation: blink 2s infinite;
+}
+
+.retro-box2:hover {
+    transform: rotate(0deg) scale(1.03);
+    box-shadow: 12px 12px 0px #ff8000;
+    background: linear-gradient(135deg, #ffff00, #ff0080);
+}
+
+.retro-box2 .pub-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000080;
+    text-shadow: 2px 2px 0px #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.retro-box2 .pub-title:hover {
+    color: #ff0000;
+    text-shadow: 3px 3px 0px #ffff00;
+    animation: wiggle 0.5s ease-in-out;
+}
+
+.retro-box2 .pub-authors {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #800080;
+    text-shadow: 1px 1px 0px #ffffff;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.retro-box2 .pub-journal {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ff0080;
+    text-shadow: 1px 1px 0px #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.3rem 1rem;
+    background: rgba(255, 255, 0, 0.8);
+    border: 2px solid #000000;
+    display: block;
+    transform: rotate(-1deg);
+    transition: all 0.3s ease;
+}
+
+.retro-box2 .pub-journal:hover {
+    transform: rotate(0deg) scale(1.05);
+    background: rgba(0, 255, 255, 0.8);
+    color: #000080;
+}
+
+.retro-box2 .pub-abstract {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #000000;
+    text-shadow: 1px 1px 0px #ffffff;
+    text-align: left;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px dashed #000000;
+    border-radius: 0;
+}
+
+.retro-box2 .pub-link {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff0000, #ff8000);
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border: 3px solid #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 0px #000000;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 0px #ffff00;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    max-width: 200px;
+}
+
+.retro-box2 .pub-link:hover {
+    background: linear-gradient(45deg, #00ff00, #0000ff);
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 6px 6px 0px #ff00ff;
+    animation: neon-pulse 0.5s ease-in-out;
+}
+
+@keyframes neon-pulse {
+    0%, 100% { box-shadow: 6px 6px 0px #ff00ff; }
+    50% { box-shadow: 6px 6px 0px #ff00ff, 0 0 20px #ff00ff; }
+}
+
+.nav-menu {   margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -61,6 +261,14 @@ body {
     51%, 100% { opacity: 0.3; }
 }
 
+/* Standalone blink class for any element */
+.blink {
+    animation: blink 0.s infinite;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 2px 2px 0px #000000;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -97,6 +305,94 @@ body {
     0%, 100% { transform: scale(1.1) rotate(0deg); }
     25% { transform: scale(1.1) rotate(-3deg); }
     75% { transform: scale(1.1) rotate(3deg); }
+}
+
+/* Dropdown Menu Styles - 90's STYLE! */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: " ▼";
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    border: 4px solid #ffff00;
+    border-top: none;
+    box-shadow: 8px 8px 0px #000000;
+    min-width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1002;
+    margin-top: 15px;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    animation: dropdown-appear 0.5s ease-out;
+}
+
+@keyframes dropdown-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.dropdown-menu li {
+    border-bottom: 2px solid #ffff00;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 0px #000000;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.dropdown-link:hover {
+    background: linear-gradient(45deg, #ff0000, #ff8000);
+    color: #ffff00;
+    transform: scale(1.05);
+    text-shadow: 3px 3px 0px #000000;
+    animation: neon-glow 0.5s ease-in-out;
+}
+
+@keyframes neon-glow {
+    0%, 100% { box-shadow: inset 0 0 10px #ff0000; }
+    50% { box-shadow: inset 0 0 20px #ff0000, 0 0 15px #ff0000; }
 }
 
 /* Main content - UNDER CONSTRUCTION VIBES */
@@ -568,6 +864,15 @@ footer::before {
         font-size: 1rem;
         padding: 0.6rem 1.2rem;
     }
+    
+    .dropdown-menu {
+        min-width: 180px;
+    }
+    
+    .dropdown-link {
+        padding: 0.8rem 1.2rem;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -593,6 +898,21 @@ footer::before {
         padding: 0.5rem 0.8rem;
         border: 2px solid #ffff00;
         text-shadow: 1px 1px 0px #000000;
+    }
+
+    .dropdown-menu {
+        min-width: 160px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        transform: translateX(-50%) translateY(0);
+    }
+    
+    .dropdown-link {
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
     }
 
     main {
