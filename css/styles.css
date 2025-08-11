@@ -485,7 +485,7 @@ main {
 /* Did You Know boxes - Interactive facts! */
 .did-you-know-box {
     position: absolute;
-    bottom: -100px;
+    bottom: -50px;
     left: 50%;
     transform: translateX(-50%);
     background: #ffff00;
@@ -638,6 +638,13 @@ footer::before {
     border: 6px solid #000000;
     box-shadow: 10px 10px 0px #ffff00;
     position: relative;
+    text-align: center;
+}
+
+.contact-form form {
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .contact-form::before {
@@ -695,6 +702,7 @@ footer::before {
     color: #000000;
     font-weight: bold;
     box-shadow: inset 2px 2px 0px #ff0000;
+    box-sizing: border-box;
 }
 
 .form-group input:focus,
